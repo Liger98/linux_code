@@ -10,3 +10,10 @@ example:
 
 2\ qdel the number of jobs
 for i in {1..9}; do qdel $i; done
+
+3\ Compress file in path A, and mv to path B, and extract files
+command:
+tar -czvf xxx.tar.gz xxx
+mv xxx.tar.gz /path/to/B/
+cd /path/to/B/
+tar -xzvf x.tar.gz
