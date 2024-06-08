@@ -1,0 +1,9 @@
+1\ view the size of each file and folder, and sort
+command: du -sh * | sort -h
+example:
+110G    240420_AuNi
+94G     240602_AuNi
+81G     240530_AuNi
+23G     opt
+16G     240322_SRO
+6.8G    231012_Ti_misfitvolume
