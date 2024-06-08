@@ -1,4 +1,4 @@
-1\ view the size of each file and folder, and sort
+1\ 使用du (disk usage) 命令查看当前路径下各个文件以及文件夹的大小，sort命令按照大小排序
 command: du -sh * | sort -h
 example:
 110G    240420_AuNi
@@ -8,10 +8,10 @@ example:
 16G     240322_SRO
 6.8G    231012_Ti_misfitvolume
 
-2\ qdel the number of jobs
+2\ qdel循环删除任务
 for i in {1..9}; do qdel $i; done
 
-3\ Compress file in path A, and mv to path B, and extract files
+3\ 解压缩文件
 command:
 tar -czvf xxx.tar.gz xxx
 mv xxx.tar.gz /path/to/B/
@@ -21,3 +21,7 @@ tar -xzvf x.tar.gz
 3.5\ 在后台持续运行解压缩
 nohup tar -czvf xxx.tar.gz xxx &
 nohup tar -xzvf x.tar.gz &
+
+3.75\ 使用nohup命令避免生成nohup.out文件，将标准输出（stdout）和标准错误（stderr）重定向到/dev/null
+nohup tar -czvf xxx.tar.gz xxx > /dev/null 2>&1 &
+nohup tar -xzvf x.tar.gz > /dev/null 2>&1 &
