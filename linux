@@ -24,4 +24,4 @@ nohup tar -xzvf x.tar.gz &
 
 3.75\ 使用nohup命令避免生成nohup.out文件，将标准输出（stdout）和标准错误（stderr）重定向到/dev/null
 nohup tar -czvf xxx.tar.gz xxx > /dev/null 2>&1 &
-nohup tar -xzvf x.tar.gz > /dev/null 2>&1 &
+nohup tar -xzvf xxx.tar.gz > /dev/null 2>&1 &
