@@ -9,4 +9,4 @@ example:
 6.8G    231012_Ti_misfitvolume
 
 2\ qdel the number of jobs
-for i in {500..1000}; do qdel $i; done
+for i in {1..9}; do qdel $i; done
