@@ -7,3 +7,6 @@ example:
 23G     opt
 16G     240322_SRO
 6.8G    231012_Ti_misfitvolume
+
+2\ qdel the number of jobs
+for i in {500..1000}; do qdel $i; done
