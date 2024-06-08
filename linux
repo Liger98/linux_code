@@ -17,3 +17,7 @@ tar -czvf xxx.tar.gz xxx
 mv xxx.tar.gz /path/to/B/
 cd /path/to/B/
 tar -xzvf x.tar.gz
+
+3.5\ 在后台持续运行解压缩
+nohup tar -czvf xxx.tar.gz xxx &
+nohup tar -xzvf x.tar.gz &
