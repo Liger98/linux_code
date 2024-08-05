@@ -13,7 +13,7 @@ example:
 ***command:
 for i in {1..9}; do qdel $i; done
 
-3\ 压缩文件xxx.tar.gz并进入/path/to/B/路径后解压为xxx.tar.gz
+3\ 压缩文件xxx.tar.gz，并进入/path/to/B/路径后，解压为xxx.tar.gz
 ***command:
 tar -czvf xxx.tar.gz xxx
 mv xxx.tar.gz /path/to/B/
@@ -32,4 +32,6 @@ nohup tar -xzvf xxx.tar.gz > /dev/null 2>&1 &
 
 4\ 查找当前路径中所有文件和文件夹内名字中带有“xxx”的文件
 ***command:
-find . -name "*min*"
+find . -name "*xxx*"
+如果只想搜索文件：find . -type f -name "*xxx*"
+如果只想搜索目录：find . -type d -name "*xxx*"
