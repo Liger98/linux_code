@@ -38,5 +38,5 @@ find . -name "*xxx*"
 
 5\ 递归删除/path/to/A/ 文件夹及其所有子文件夹中名字包含 log. 的文件和目录
 ***command:
-find /path/to/A -name "log.*" -exec rm -rf {} \
-如果只匹配文件：find /path/to/A -type f -name "log.*" -exec rm -rf {} \
+find /path/to/A -name "log.*" -exec rm -rf {} \;
+如果只匹配文件：find /path/to/A -type f -name "log.*" -exec rm -rf {} \;
