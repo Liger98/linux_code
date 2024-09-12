@@ -9,6 +9,9 @@ example:
 16G     240322_SRO
 6.8G    231012_Ti_misfitvolume
 
+1.5\ 选中并删除xxx用户的所有任务
+qselect -u xxx | xargs qdel
+
 2\ qdel循环删除任务
 ***command:
 for i in {1..9}; do qdel $i; done
