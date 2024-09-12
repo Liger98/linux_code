@@ -43,3 +43,4 @@ find /path/to/A -name "log.*" -exec rm -rf {} \;
 同时删除扩展名包含 log. 和 data. 的文件或文件夹：find /path/to/A \( -name "log.*" -o -name "data.*" \) -exec rm -rf {} \;
 find /path/to/A/ \( -name "*.py" -o -name "*.in" -o -name "*.sh" -o -name "*bash" -o -name "bash*" -o -name "log.*" -o -name "*.log" -o -name "collect*" -o -name "sub*" -o -name "MC.e*" -o -name "MC.o*" \) -exec rm -rf {} \;
 find /path/to/B/ \( -name "vasprun.xml" -o -name "EIGENVAL" -o -name "IBZKPT" -o -name "DOSCAR" -o -name "CHG*" -o -name "REPORT" -o -name "OUTCAR" \) -exec rm -rf {} \;
+find /path/to/A/ \( -name "CHG" -o -name "CHGCAR" -o -name "DOSCAR" -o -name "EIGENVAL" -o -name "OSZICAR" -o -name "OUTCAR" -o -name "pbs.*" -o -name "PCDAT" -o -name "REPORT" -o -name "vasprun.xml" -o -name "WAVECAR" -o -name "XDATCAR" -o -name "y_oszicar" -o -name "y_poscar" \) -exec rm -rf {} \;
