@@ -33,6 +33,8 @@ nohup tar -xzvf x.tar.gz &
 nohup tar -czvf xxx.tar.gz xxx > /dev/null 2>&1 &
 nohup tar -xzvf xxx.tar.gz > /dev/null 2>&1 &
 
+nohup /opt/intel/impi/5.0.3.049/intel64/bin/mpirun -np 48 /opt/software/n2p2/bin/lmp_mpi -in MC_exchange.in > /dev/null 2>&1 &
+
 3.775\ 查找并停止脚本 xxxx.bash，获取 xxxx.bash 的 PID 并终止
 ***command:
 ps -ef | grep xxxx.bash
