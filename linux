@@ -30,8 +30,10 @@ nohup tar -xzvf x.tar.gz &
 
 3.75\ 使用nohup命令避免生成nohup.out文件，将标准输出（stdout）和标准错误（stderr）重定向到/dev/null
 ***command:
-nohup tar -czvf xxx.tar.gz xxx > /dev/null 2>&1 &
-nohup tar -xzvf xxx.tar.gz > /dev/null 2>&1 &
+nohup xxx > /dev/null 2>&1 &
+
+压缩：nohup tar -czvf xxx.tar.gz xxx > /dev/null 2>&1 &
+解压：nohup tar -xzvf xxx.tar.gz > /dev/null 2>&1 &
 
 nohup /opt/intel/impi/5.0.3.049/intel64/bin/mpirun -np 48 /opt/software/n2p2/bin/lmp_mpi -in MC_exchange.in > /dev/null 2>&1 &
 
