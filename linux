@@ -15,6 +15,10 @@ qselect -u xxx | xargs qdel
 系统:
 killall -u xxx
 
+1.75\ 删除集群xxx用户所有状态为 Q 的任务
+***command:
+qstat -u ldu | awk '$10=="Q"{print $1}' | xargs -r qdel
+
 2\ qdel循环删除任务
 ***command:
 for i in {1..9}; do qdel $i; done
