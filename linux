@@ -30,7 +30,7 @@ mv xxx.tar.gz /path/to/B/
 cd /path/to/B/
 tar -xzvf xxx.tar.gz
 
-3.25\ 后台执行拷贝文件夹xxx
+3.25\ 后台执行拷贝文件夹xxx，自动合并已有目录，并对同名文件进行“更新式同步”。
 nohup rsync -avh --progress /path/to/A/xxx/ /path/to/B/xxx/ > /home/ldu/rsync_2025.log 2>&1 &
 
 3.5\ 在后台持续运行解压缩。nohup: "No Hang Up"的缩写，它可以使命令忽略挂断信号，即使终端关闭也会继续运行。&: 将命令放入后台执行。
